@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-regular-webfont.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header slider">
+    <ul class="header__menu">
+      <li><a class="header__logo">
+          <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
+        </a></li>
+      <li>
+        <nav class="semantic">
+          <ul class="header__links">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="inner.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li><a href="#" class="button button__cart">Корзина</a></li>
+    </ul>
+    <h1 class="semantic header__title visually-hidden">
+      Nerds главная страница
+    </h1>
+    <input class="slider__radio--expencive visually-hidden" type="radio" name="point" id="slide1" checked>
+    <input class="slider__radio--love visually-hidden" type="radio" name="point" id="slide2">
+    <input class="slider__radio--hard visually-hidden" type="radio" name="point" id="slide3">
+    <div class="slider__content slider__content--expencive">
+      <h2 class="semantic visually-hidden">
+        Первый слоган слайдера
+      </h2>
+      <p class="header__slogan">
+        Долго, дорого, скрупулёзно.
+      </p>
+      <p class="header__description">
+        Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+      </p>
+    </div>
+    <div class="slider__content slider__content--love">
+      <h2 class="semantic visually-hidden">
+        Второй слоган слайдера
+      </h2>
+      <p class="header__slogan">
+        Любим математику как никто другой
+      </p>
+      <p class="header__description">
+        Никакого креатива, только математические формулы<br> для рассчёта идеальных пропорций.
+      </p>
+    </div>
+    <div class="slider__content slider__content--hard">
+      <h2 class="semantic visually-hidden">
+        Третий слоган слайдера
+      </h2>
+      <p class="header__slogan">
+        Только ночь, только хардкор
+      </p>
+      <p class="header__description">
+        Работать днём, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.
+      </p>
+    </div>
+    <div class="slider__controls">
+      <label class="slider__control--expencive" for="slide1"></label>
+      <label class="slider__control--love" for="slide2"></label>
+      <label class="slider__control--hard" for="slide3"></label>
+    </div>
+    <a href="#" class="button button__slider">Узнать больше</a>
+  </header>
+  <main class="page">
+    <ul class="offers">
+      <li class="offers__item">
+        <img src="img/illustration-1-300-146.png" width="300" height="146" alt="Веб сайты">
+        <h3 class="offers__title">Веб-сайты</h3>
+        <p class="offers__description">
+          Мир никогда не будет прежним после того как увидит ваш сайт!
+        </p>
+        <a href="#" class="button button__offer button__offer--web">
+          Заказать
+        </a>
+      </li>
+      <li class="offers__item">
+        <img src="img/illustration-2-300-146.png" width="300" height="146" alt="Приложения">
+        <h3 class="offers__title">Приложения</h3>
+        <p class="offers__description">
+          Покорите топ-10 приложений в AppStore и Google Play
+        </p>
+        <a href="#" class="button button__offer button__offer--app">
+          Заказать
+        </a>
+      </li>
+      <li class="offers__item">
+        <img src="img/illustration-3-300-146.png" width="300" height="146" alt="Презентации">
+        <h3 class="offers__title">Презентации</h3>
+        <p class="offers__description">
+          Вы даже не подозреваете, насколько вы изумительны!
+        </p>
+        <a href="#" class="button button__offer button__offer--presentation">
+          Заказать
+        </a>
+      </li>
+    </ul>
+    <div class="page__description page-description">
+      <h2 class="semantic visually-hidden">
+        Кто мы такие
+      </h2>
+      <p class="page-description__title">
+        <b>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</b>
+      </p>
+      <p class="page-description__text">
+        Исповедуем принципы минимализма и чистоты. Ставим математический рассчёт превыше креатива. Работаем не покладая рук, как роботы.
+      </p>
+      <h4 class="page-description__subtitle">
+        Выполняем заказы на разработку:
+      </h4>
+      <ul class="page-description__offers">
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </div>
+    <div class="page__statistics page-statistics">
+      <img src="img/nerds-illustration-360-208.png" width="360" height="208" alt="Нёрдс-иллюстрация">
+      <h2 class="semantic visually-hidden">
+        Цифры:
+      </h2>
+      <p class="page-statistics__title">
+        С 2004 года любим точность во всём:
+      </p>
+      <table class="page-statistics__table">
+        <tr class="page-statistics__table--rate">
+          <td><b>146<sup>&#37;</sup></b></td>
+          <td><b>100<sup>&#37;</sup></b></td>
+          <td><b>50<sup>&#37;</sup></b></td>
+        </tr>
+        <tr class="page-statistics__table--features">
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
+        </tr>
+      </table>
+    </div>
+    <ul class="partner-list">
+      <li>
+        <a class="partner-list__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/partner-1-199-68.png" width="199" height="68" alt="HTML-academy">
+        </a>
+      </li>
+      <li>
+        <a class="partner-list__link" href="#">
+          <img src="img/partner-2-209-90.png" width="209" height="90" alt="Borodinski">
+        </a>
+      </li>
+      <li>
+        <a class="partner-list__link" href="#">
+          <img src="img/partner-3-185-52.png" width="185" height="52" alt="Pink">
+        </a>
+      </li>
+      <li>
+        <a class="partner-list__link" href="#">
+          <img src="img/partner-4-173-84.png" width="173" height="84" alt="Mishka">
+        </a>
+      </li>
+    </ul>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__contacts">
+      <div class="page-footer__contacts-card">
+        <h3 class="page-footer__contacts-title">Nёrds design studio</h3>
+        <p class="page-footer__contacts-address">
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="page-footer__contacts-tel">тел. +7(812) 275-75-75</p>
+        <button class="button button__contacts">
+          Напишите нам
+        </button>
+      </div>
+    </div>
+    <ul class="page-footer__social">
+      <li><a href="#" class="footer__social--vk" title="Мы Вконтакте"></a></li>
+      <li><a href="#" class="footer__social--fb" title="Наш фейсбук"></a></li>
+      <li><a href="#" class="footer__social--in" title="Наш Инстаграм"></a></li>
+    </ul>
+    <div class="page-footer__message">
+      <p class="page-footer__slogan">
+        Давайте дружить, это выгодно!
+      </p>
+      <p class="footer-message__text">
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+    </div>
+  </footer>
+  <div class="write-us visually-hidden">
+    <h2 class="write-us__title">
+      Напишите нам
+    </h2>
+    <button class="write-us__close-popup close-popup"><span class="semantic visually-hidden">Закрыть</span>&times;</button>
+    <form class="write-us__form" action="?" method="post">
+      <p class="write-us__name">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+      </p>
+      <p class="write-us__email">
+        <label for="email">Ваш e-mail:</label><br>
+        <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+      </p>
+      <p class="write-us__message">
+        <label for="message">Текст письма:</label><br>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button button__write-us">Отправить</button>
+    </form>
+  </div>
+  <script src="js/dialog.js"></script>
+</body>
+
+</html>

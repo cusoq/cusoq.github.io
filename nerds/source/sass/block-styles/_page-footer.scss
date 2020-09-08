@@ -1,0 +1,102 @@
+.page-footer__contacts {
+  position: relative;
+  min-height: 420px;
+  background-image: url("../img/map-1440-416.png");
+}
+
+.page-footer__contacts::after {
+  position: absolute;
+  content: "";
+  top: 22%;
+  left: 57%;
+  width: 232px;
+  height: 190px;
+  background-color: transparent;
+  background-image: url("../img/map-marker-231-190.png");
+}
+
+.page-footer__contacts-card {
+  position: absolute;
+  box-sizing: border-box;
+  top: 60px;
+  left: 140px;
+  width: 320px;
+  height: 310px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.page-footer__contacts-title {
+  font-family: "robotomedium", "Arial", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+.page-footer__contacts-address {
+  line-height: 1;
+  margin: 0 0 20px 0;
+  padding: 0 10px 0 0;
+}
+
+.page-footer__contacts-tel {
+  margin: 0 0 30px 0;
+}
+
+.page-footer__social {
+  display: inline-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 540px;
+  min-height: 220px;
+  padding-top: 65px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.page-footer__social a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(225, 225, 225, 1);
+  border-radius: 50%;
+}
+
+.footer__social--vk {
+  background-image: url("../img/vk-icon-26-15.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__social--fb {
+  background-image: url("../img/fb-icon-12-22.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__social--in {
+  background-image: url("../img/insta-icon-21-21.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.page-footer__message {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 895px;
+  min-height: 220px;
+  padding-top: 60px;
+}
+
+.page-footer__slogan {
+  font-family: "robotomedium", "Arial", sans-serif;
+  font-size: 37px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer-message__text {
+  margin: 0;
+}

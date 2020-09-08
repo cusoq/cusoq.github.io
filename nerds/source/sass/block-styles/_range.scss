@@ -1,0 +1,65 @@
+.range__controls {
+  position: relative;
+  width: 260px;
+  height: 80px;
+  margin-top: 47px;
+  margin-bottom: 15px;
+  background-color: rgba(237, 237, 237, 1);
+}
+
+.range__controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 200px;
+  height: 3px;
+  background-color: rgba(215, 219, 221, 1);
+}
+
+.range__bar {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  height: 3px;
+  background-color: rgba(113, 200, 120, 1);
+  z-index: 1;
+}
+
+.range__control {
+  cursor: pointer;
+  position: absolute;
+  top: 39%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(171, 171, 171, 1);
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 1), 0 1px 0 1px rgba(215, 219, 221, 1);
+  z-index: 2;
+}
+
+.range__control--min {
+  left: 6%;
+}
+
+.range__control--max {
+  left: 60%;
+}
+
+.range__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range__price label {
+  text-transform: uppercase;
+}
+
+.range__price input {
+  outline: none;
+  border: none;
+  background-color: rgba(237, 237, 237, 1);
+  width: 80px;
+  height: 36px;
+  text-align: center;
+}

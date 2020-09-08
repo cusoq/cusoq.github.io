@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+  font-family: "robotoregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0;
+  width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-regular-webfont.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header header--inner">
+    <ul class="header__menu">
+      <li><a class="header__logo header__logo--inner" href="index.html">
+          <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
+        </a></li>
+      <li>
+        <nav class="semantic">
+          <ul class="header__links">
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a class="current">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li><a href="#" class="button button__cart">Корзина</a></li>
+    </ul>
+    <div class="header__description">
+      <h1 class="header__title">
+        Магазин готовых шаблонов
+      </h1>
+    </div>
+  </header>
+  <main class="page page--inner">
+    <aside class="page__filters filters">
+      <form class="filters__form" method="get" action="?">
+        <fieldset class="filters__price range">
+          <legend>Стоимость:</legend>
+          <input class="range__input visually-hidden" type="range" name="price" value="1000">
+          <div class="range__controls">
+            <div class="range__bar" style="margin-left: 0%; width: 55%">
+            </div>
+            <div class="range__control range__control--min"></div>
+            <div class="range__control range__control--max"></div>
+          </div>
+          <div class="range__price">
+            <label class="range__price--min">от&emsp;<input name="min-price" type="text" value="0"></label>
+            <label class="range__price--max">до&emsp;<input name="max-price" type="text" value="15&thinsp;000"></label>
+          </div>
+        </fieldset>
+        <fieldset class="filters__layout-type">
+          <legend>Сетка:</legend>
+          <p><input class="filters__layout-type-radio visually-hidden" type="radio" name="layout-type-enabled" value="y" id="adaptive-label" checked>
+            <label for="adaptive-label" tabindex="0">Адаптивная</label></p>
+          <p><input class="filters__layout-type-radio visually-hidden" type="radio" name="layout-type-enabled" value="n" id="fix-label">
+            <label for="fix-label" tabindex="0">Фиксированная</label></p>
+          <p><input class="filters__layout-type-radio visually-hidden" type="radio" name="layout-type-disabled" value="n" id="response-label">
+            <label for="response-label">Резиновая</label></p>
+        </fieldset>
+        <fieldset class="filters__features">
+          <legend>Особенности:</legend>
+          <p><input class="filters__features-checkbox visually-hidden" type="checkbox" name="slider" id="slider-label" checked>
+            <label for="slider-label" tabindex="0">Слайдер</label></p>
+          <p><input class="filters__features-checkbox visually-hidden" type="checkbox" name="advantages" id="advantages-label">
+            <label for="advantages-label" tabindex="0">Блок преимуществ</label></p>
+          <p><input class="filters__features-checkbox visually-hidden" type="checkbox" name="news" id="news-label" checked>
+            <label for="news-label" tabindex="0">Новости</label></p>
+          <p><input class="filters__features-checkbox visually-hidden" type="checkbox" name="gallery" id="gallery-label">
+            <label for="gallery-label" tabindex="0">Галерея</label></p>
+          <p><input class="filters__features-checkbox visually-hidden" type="checkbox" name="cart" id="cart-label">
+            <label for="cart-label" tabindex="0">Корзина</label></p>
+        </fieldset>
+        <fieldset class="filters__result">
+          <button class="button button__filter">Показать</button>
+        </fieldset>
+      </form>
+    </aside>
+    <div class="page__catalog catalog">
+      <div class="sort">
+        <h3 class="sort__title">Сортировать:</h3>
+        <ul class="sort__buttons">
+          <li><button class="button button--sort">По цене</button></li>
+          <li><button class="button button--sort">По типу</button></li>
+          <li><button class="button button--sort">По названию</button></li>
+        </ul>
+        <ul class="sort__rate-buttons">
+          <li title="По возрастанию"><button class="button button--sort">▼</button></li>
+          <li title="По убыванию"><button class="button button--sort">▲</button></li>
+        </ul>
+      </div>
+      <ul class="cards">
+        <li class="cards__item" tabindex="0">
+          <img src="img/img-sedona-360-576.jpg" width="360" height="576" alt="Информационный сайт для туристов">
+          <div class="cards__popup">
+            <h3 class="cards__title">Sedona</h3>
+            <p class="cards__description">
+              Информационный сайт<br> для туристов
+            </p>
+            <a href="#" class="button button__card">
+              9&thinsp;900&thinsp;руб.
+            </a>
+          </div>
+        </li>
+        <li class="cards__item" tabindex="0">
+          <img src="img/img-pink-360-576.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android">
+          <div class="cards__popup">
+            <h3 class="cards__title">Pink</h3>
+            <p class="cards__description">
+              Продуктовый лендинг<br> приложения для iOS и Android
+            </p>
+            <a href="#" class="button button__card">
+              9&thinsp;900&thinsp;руб.
+            </a>
+          </div>
+        </li>
+        <li class="cards__item" tabindex="0">
+          <img src="img/img-barbershop-360-576.jpg" width="360" height="576" alt="Салон красоты. Для мужчин, да.">
+          <div class="cards__popup">
+            <h3 class="cards__title">Barbershop</h3>
+            <p class="cards__description">
+              Салон красоты.<br> Для мужчин, да.
+            </p>
+            <a href="#" class="button button__card">
+              9&thinsp;900&thinsp;руб.
+            </a>
+          </div>
+        </li>
+        <li class="cards__item" tabindex="0">
+          <img src="img/img-mishka-360-576.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек">
+          <div class="cards__popup">
+            <h3 class="cards__title">Mishka</h3>
+            <p class="cards__description">
+              Интернет-магазин<br> вязаных игрушек
+            </p>
+            <a href="#" class="button button__card">
+              9&thinsp;900&thinsp;руб.
+            </a>
+          </div>
+        </li>
+        <li class="cards__item" tabindex="0">
+          <img src="img/img-aplus-360-576.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации">
+          <div class="cards__popup">
+            <h3 class="cards__title">A Plus</h3>
+            <p class="cards__description">
+              Лендинг курсов повышения<br> квалификации
+            </p>
+            <a href="#" class="button button__card">
+              9&thinsp;900&thinsp;руб.
+            </a>
+          </div>
+        </li>
+        <li class="cards__item" tabindex="0">
+          <img src="img/img-kvast-360-576.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса">
+          <div class="cards__popup">
+            <h3 class="cards__title">Kvast</h3>
+            <p class="cards__description">
+              Промо-сайт производителя<br> крафтового кваса
+            </p>
+            <a href="#" class="button button__card">
+              9&thinsp;900&thinsp;руб.
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div class="pagination">
+        <a class="button button--pagination visually-hidden">Предыдущая</a>
+        <ul class="pagination__list">
+          <li><a class="pagination__number pagination__number--current">1</a></li>
+          <li><a class="pagination__number" href="#">2</a></li>
+          <li><a class="pagination__number" href="#">3</a></li>
+        </ul>
+        <a class="pagination__next" href="#">Следующая</a>
+
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__contacts">
+      <div class="page-footer__contacts-card">
+        <h3 class="page-footer__contacts-title">Nёrds design studio</h3>
+        <p class="page-footer__contacts-address">
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="page-footer__contacts-tel">тел. +7(812) 275-75-75</p>
+        <button class="button button__contacts">
+          Напишите нам
+        </button>
+      </div>
+    </div>
+    <ul class="page-footer__social">
+      <li><a href="#" class="footer__social--vk" title="Мы Вконтакте"></a></li>
+      <li><a href="#" class="footer__social--fb" title="Наш фейсбук"></a></li>
+      <li><a href="#" class="footer__social--in" title="Наш Инстаграм"></a></li>
+    </ul>
+    <div class="page-footer__message">
+      <p class="page-footer__slogan"><b>
+          Давайте дружить, это выгодно!
+        </b></p>
+      <p class="footer-message__text">
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+    </div>
+  </footer>
+  <div class="write-us visually-hidden">
+    <h2 class="write-us__title">
+      Напишите нам
+    </h2>
+    <button class="write-us__close-popup close-popup"><span class="semantic visually-hidden">Закрыть</span>&times;</button>
+    <form class="write-us__form" action="?" method="post">
+      <p class="write-us__name">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+      </p>
+      <p class="write-us__email">
+        <label for="email">Ваш e-mail:</label><br>
+        <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+      </p>
+      <p class="write-us__message">
+        <label for="message">Текст письма:</label><br>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button button__write-us">Отправить</button>
+    </form>
+  </div>
+  <script src="js/dialog.js"></script>
+</body>
+
+</html>

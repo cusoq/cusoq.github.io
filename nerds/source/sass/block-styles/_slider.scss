@@ -1,0 +1,80 @@
+.slider__content {
+  position: absolute;
+  width: auto;
+  min-height: 354px;
+  opacity: 0;
+  transition: opacity ease-in-out 0.7s;
+}
+
+.slider__content--expencive {
+  padding-top: 62px;
+  top: 125px;
+  left: 138px;
+  background-image: url("../img/slide1-698-413.png");
+  background-repeat: no-repeat;
+  background-position: 71%;
+}
+
+.slider__content--love {
+  padding-top: 77px;
+  top: 110px;
+  left: 138px;
+  background-image: url("../img/slide2-663-430.png");
+  background-repeat: no-repeat;
+  background-position: 77%;
+}
+
+.slider__content--hard {
+  padding-top: 62px;
+  top: 125px;
+  left: 138px;
+  background-image: url("../img/slide3-759-411.png");
+  background-repeat: no-repeat;
+  background-position: 75%;
+}
+
+.slider__controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  height: 20px;
+  top: 79%;
+  left: 47%;
+  z-index: 1;
+}
+
+.slider__controls label {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider__controls label:hover {
+  background: rgba(218, 218, 218, 1);
+}
+
+.slider__radio--expencive:checked ~ .slider__content--expencive,
+.slider__radio--love:checked ~ .slider__content--love,
+.slider__radio--hard:checked ~ .slider__content--hard {
+  opacity: 1;
+}
+
+.slider__radio--expencive:checked ~ .slider__controls > .slider__control--expencive::after,
+.slider__radio--love:checked ~ .slider__controls > .slider__control--love::after,
+.slider__radio--hard:checked ~ .slider__controls > .slider__control--hard::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 24%;
+  border-radius: 50%;
+  border: 2px solid rgba(194, 194, 194, 1);
+}

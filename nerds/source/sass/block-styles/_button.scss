@@ -1,0 +1,174 @@
+.button {
+  display: block;
+  font-family: "robotomedium", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3.2;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button__cart {
+  position: relative;
+  padding-left: 85px;
+  color: inherit;
+  background-color: transparent;
+  background-image: url("../img/cart-icon-15-15.png");
+  background-repeat: no-repeat;
+  background-position: 30%, center;
+  line-height: 77px;
+}
+
+.button__cart:hover,
+.button__cart:focus {
+  color: rgba(251, 86, 90, 1);
+}
+
+.button__cart:active {
+  color: rgba(166, 166, 166, 1);
+}
+
+.button__cart--current::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 45px;
+  width: 115px;
+  height: 2px;
+  background-color: rgba(251, 86, 90, 1);
+}
+
+.button__slider {
+  position: absolute;
+  width: 240px;
+  height: 50px;
+  top: 410px;
+  background-color: rgba(251, 86, 90, 1);
+}
+
+.button__contacts {
+  font-family: "robotoregular", "Arial", sans-serif;
+  width: 220px;
+  height: 50px;
+  background-color: rgba(251, 86, 90, 1);
+}
+
+.button__offer {
+  width: 160px;
+  height: 50px;
+}
+
+.button__offer--web {
+  background-color: rgba(251, 86, 90, 1);
+}
+
+.button__offer--app {
+  background-color: rgba(0, 202, 116, 1);
+}
+
+.button__offer--presentation {
+  background-color: rgba(239, 200, 73, 1);
+}
+
+.button__write-us {
+  font-family: "robotoregular", "Arial", sans-serif;
+  width: 260px;
+  height: 50px;
+  background-color: rgba(251, 86, 90, 1);
+}
+
+.button__filter {
+  color: inherit;
+  width: 260px;
+  height: 50px;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.button--sort {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: transparent;
+}
+
+.button__card {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(251, 86, 90, 1);
+}
+/////////////////////////////////////////////////////////////////////
+// Поведение кнопок и ссылок:
+.button__slider:hover,
+.button__slider:focus,
+.button__contacts:hover,
+.button__contacts:focus,
+.button__offer--web:hover,
+.button__offer--web:focus,
+.button__write-us:hover,
+.button__write-us:focus,
+.page-footer__social a:hover,
+.page-footer__social a:focus {
+  background-color: rgba(231, 66, 70, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__slider:active,
+.button__contacts:active,
+.button__offer--web:active,
+.button__write-us:active,
+.page-footer__social a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(215, 55, 59, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__offer--app:hover,
+.button__offer--app:focus {
+  background-color: rgba(0, 188, 108, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__offer--app:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 170, 98, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__offer--presentation:hover,
+.button__offer--presentation:focus {
+  background-color: rgba(234, 181, 52, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__offer--presentation:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(229, 167, 34, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__filter:hover,
+.button__filter:focus {
+  background-color: rgba(223, 223, 223, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__filter:active {
+  background-color: rgba(213, 213, 213, 1);
+  box-shadow: inset 0 2px 0 2px rgba(191, 191, 191, 1);
+  opacity: 0.7;
+  transition: ease-out 0.2s;
+}
+
+.button__card:hover,
+.button__card:focus {
+  background-color: rgba(231, 66, 70, 1);
+  transition: ease-out 0.2s;
+}
+
+.button__card:active {
+  background-color: rgba(215, 55, 59, 1);
+  transition: ease-out 0.2s;
+}
